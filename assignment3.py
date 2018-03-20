@@ -2,7 +2,7 @@
 # Created on Mar 2018
 # Calculates cost of a pizza depending on size and # of toppings
 
-pizzaSize = input( '''
+pizza_size = input( '''
 What size would you like your pizza?
 
 Type "large" for a Large Pizza.
@@ -10,9 +10,9 @@ Type "extra large" for an Extra Large Pizza.
 
 ''')
 
-if pizzaSize == 'large' or pizzaSize == 'extra large':
+if pizza_size == 'large' or pizza_size == 'extra large':
 	toppings = int(input( 'Enter how many toppings you would like between 1 and 4: '))
-	if pizzaSize == 'large':
+	if pizza_size == 'large':
 		if toppings == 1:
 			subtotal = 6 + 1 
 			print( 'Subtotal: ${}'.format(round(subtotal, 2)))
@@ -43,7 +43,7 @@ if pizzaSize == 'large' or pizzaSize == 'extra large':
 			print( 'Total: ${}'.format(round(total, 2)))
 		else:
 			print('Invalid # of toppings. Please restart and choose a value between 1 and 4.')
-	elif pizzaSize == 'extra large':
+	elif pizza_size == 'extra large':
 		if toppings == 1:
 			subtotal = 10 + 1 
 			print( 'Subtotal: ${}'.format(round(subtotal, 2)))
